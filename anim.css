@@ -1,0 +1,158 @@
+body {
+    background-color: lightblue; /* Змінено колір фону */
+}
+p {
+    font-size: 35px;
+    color: darkblue; /* Змінено колір тексту */
+    text-align: center;
+    margin-top: 20px; /* Додано відступ зверху */
+}
+div {
+    width: 500px;
+    height: 200px;
+    background-color: coral; /* Змінено колір фону блоків */
+    font-size: 30px; /* Зменшено розмір шрифту */
+    text-align: center;
+    margin: 20px auto; /* Додано автоматичний відступ */
+    line-height: 200px; /* Вирівнювання тексту по центру */
+    border-radius: 10px; /* Додано закруглені кути */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Тінь блоків */
+}
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    from{transform: translateX(0);}
+    to{transform: translateX(-100%);}
+}
+
+/* Додано нові анімації та кольори для блоків */
+.d1 {
+    animation: colorChange 4s infinite alternate; /* Нова анімація для d1 */
+}
+
+.d2 {
+    animation: colorChange2 4s infinite; /* Нова анімація для d2 */
+}
+
+.d3 {
+    animation: slideIn 4s infinite; /* Нова анімація для d3 */
+}
+
+/* Анімація зміни кольору для d1 */
+@keyframes colorChange {
+    from {background-color: coral;}
+    to {background-color: lavender;}
+}
+
+/* Анімація зміни кольору для d2 */
+@keyframes colorChange2 {
+    0% {background-color: coral;}
+    25% {background-color: lightgreen;}
+    50% {background-color: coral;}
+    75% {background-color: lightgreen;}
+    100% {background-color: coral;}
+}
+
+/* Анімація зсуву для d3 */
+@keyframes slideIn {
+    from {transform: translateX(0);}
+    to {transform: translateX(100px);}
+}
+/* Анімація для d4 */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Анімація для d5 */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+/* Анімація для d6 */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Анімація для d7 */
+@keyframes flip {
+    0% { transform: perspective(400px) rotateY(0); }
+    100% { transform: perspective(400px) rotateY(360deg); }
+}
+
+/* Анімація для d8 */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-10px); }
+    40%, 80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Анімація для d9 */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Анімація для d10 */
+@keyframes grow {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.5); }
+}
+
+/* Анімація для d11 */
+@keyframes slideDown {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+
+/* Анімація для d12 */
+@keyframes slideRight {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+/* Стилі для кожного елементу */
+.d4 {
+    animation: rotate 4s linear infinite;
+}
+
+.d5 {
+    animation: bounce 2s infinite;
+}
+
+.d6 {
+    animation: pulse 2s infinite;
+}
+
+.d7 {
+    animation: flip 3s infinite;
+}
+
+.d8 {
+    animation: shake 2s infinite;
+}
+
+.d9 {
+    animation: fadeIn 2s ease-in-out infinite;
+}
+
+.d10 {
+    animation: grow 2s ease-in-out infinite;
+}
+
+.d11 {
+    animation: slideDown 2s ease-in-out infinite;
+}
+
+.d12 {
+    animation: slideRight 2s ease-in-out infinite;
+}
